@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="scrol">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <title>Vowel And Consonant</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div id="title" class="title">
+        <h2>Test Logic</h2>
+      </div>
+      <div class="menu">
+        <a id="problem" href="#test1">Problem</a>
+        <a id="psbb" href="#test2">PSBB</a>
+      </div>
+    </nav>
+    <div id="test1">
+      <div class="conntainer">
+        <div class="process-card">
+          <div class="display">
+            <h2 id="vowel"></h2>
+            <h2 id="consonant"></h2>
+          </div>
+          <input id="input" type="text" />
+          <button id="button">Display</button>
+        </div>
+
+        <div class="container-history">
+          <h2>History</h2>
+          <div class="history-card">
+            <table>
+              <thead>
+                <th>Input String</th>
+                <th>Vowel</th>
+                <th>Consonant</th>
+              </thead>
+              <tbody id="historyList"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="test2">
+      <div class="container-psbb">
+        <div class="display">
+          <h2 id="displayResult"></h2>
+        </div>
+        <div class="card-psbb">
+         <form action="#test2">
+          <label>Input the number of families</label>
+          <input id="numberOfFamily" type="number" />
+          <label for="">Input the number of families</label>
+          <input id="numberOfMember" type="text" />
+          <input type="button" id="result" value = "Result"/>
+         </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="title-footer">
+        <p>Test Logic &copy; Susila Tropika | 2022</p>
+      </div>
+    </footer>
+  </body>
+  <script src="/assets/vowelAndConsonant.js"></script>
+  <script src="/assets/validation.js"></script>
+  <script>
+    let problem = document.getElementById("problem");
+    let psbb = document.getElementById("psbb");
+    problem.addEventListener("click", () => {
+      let title = document.getElementById("title");
+      title.innerHTML = "<h2>Vowel And Consonant</h2>";
+    });
+    psbb.addEventListener("click", () => {
+      let title = document.getElementById("title");
+      title.innerHTML = "<h2>PSBB</h2>";
+    });
+  </script>
+</html>
